@@ -33,16 +33,16 @@ network --onboot=yes --bootproto=dhcp --hostname=sina-laptop
 keyboard us
 
 # Configure Language During Installation
-lang en_AU
+lang en_US
 
 # Configure X Window System
 xconfig --startxonboot
 
 # Configure Time Zone
-timezone Australia/Sydney
+timezone Russia/Moscow
 
 # Create User Account
-user --name=sina --password=$userpass --iscrypted --groups=wheel
+user --name=admin --password=admin --iscrypted --groups=wheel
 
 # Set Root Password
 rootpw --lock
